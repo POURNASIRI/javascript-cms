@@ -68,6 +68,7 @@ submitBtn.addEventListener("click",event=>{
             },
             body:JSON.stringify(newUserData)
         }).then((res)=>{
+            console.log(newUserData)
             console.log(res)
             clearInput()
 
