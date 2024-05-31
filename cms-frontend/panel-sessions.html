@@ -170,24 +170,24 @@
                             <!-- ! ---------------------- session select course box ---------------------- ! -->
                             <div class="session-select-course-box w-100">
                                 <!-- ! -------------------------- session dropdown box ------------------- ! -->
-                                <div class="session-dropdown-box    valid"> <!-- add active to open the session dropdown menu box --> <!-- add valid class or invalid class to change color of input -->
+                                <div class="session-dropdown-box    valid" id="courses-parent-dropdown"> <!-- add active to open the session dropdown menu box --> <!-- add valid class or invalid class to change color of input -->
                                     <span class="session-dropdown-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_book" data-name="vuesax/linear/book" transform="translate(-556 -188)"><g id="book"><path id="Vector" d="M20,14.078V2.008A1.97,1.97,0,0,0,17.83.018h-.06a18.851,18.851,0,0,0-7.07,2.37l-.17.11a1.108,1.108,0,0,1-1.06,0l-.25-.15A18.757,18.757,0,0,0,2.16.008,1.967,1.967,0,0,0,0,2v12.08a2.055,2.055,0,0,0,1.74,1.98l.29.04a25.693,25.693,0,0,1,7.44,2.44l.04.02a1.08,1.08,0,0,0,.96,0,25.461,25.461,0,0,1,7.46-2.46l.33-.04A2.055,2.055,0,0,0,20,14.078Z" transform="translate(558 190.662)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,0V15" transform="translate(568 193.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M2.25,0H0" transform="translate(561.5 196.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M3,0H0" transform="translate(561.5 199.49)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-5" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(580 212) rotate(180)" fill="none" opacity="0"/></g></g></svg>
                                     </span>
-                                    <span class="session-dropdown-text">Javascript</span> <!-- session text, where you should append text of items -->
+                                    <span class="session-dropdown-text" id="main-course">Javascript</span> <!-- session text, where you should append text of items -->
                                     <span class="session-dropdown-toggle-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g id="vuesax_linear_arrow-up" data-name="vuesax/linear/arrow-up" transform="translate(-556 -316)"><g id="arrow-up"><path id="Vector" d="M6.388,11.993H3.718c-3.31,0-4.67-2.35-3.01-5.22l1.34-2.31,1.34-2.31c1.66-2.87,4.37-2.87,6.03,0l1.34,2.31,1.34,2.31c1.66,2.87.3,5.22-3.01,5.22Z" transform="translate(561.612 322.008)" fill="none" stroke="var(--primary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M0,0H24V24H0Z" transform="translate(580 340) rotate(180)" fill="none" opacity="0"/></g></g></svg>
                                     </span>
     
                                     <!-- ! ---------------------- session dropdown menu box ---------------------- ! -->
                                     <ul class="session-dropdown-menu-box">
-                                        <li class="session-dropdown-menu-item">red banana</li>
-                                        <li class="session-dropdown-menu-item">red banana</li>
-                                        <li class="session-dropdown-menu-item">red banana</li>
-                                        <li class="session-dropdown-menu-item">red banana</li>
-                                        <li class="session-dropdown-menu-item">red banana</li>
-                                        <li class="session-dropdown-menu-item">golden banana</li>
-                                        <li class="session-dropdown-menu-item">black banana</li>
+                                        <li class="session-dropdown-menu-item">JavaScript</li>
+                                        <li class="session-dropdown-menu-item">React js</li>
+                                        <li class="session-dropdown-menu-item">Next js</li>
+                                        <li class="session-dropdown-menu-item">Tailwind css</li>
+                                        <li class="session-dropdown-menu-item">TypeScript</li>
+                                        <li class="session-dropdown-menu-item">Css</li>
+                                        <li class="session-dropdown-menu-item">HTML</li>
                                     </ul>
                                 </div>
                                 <h3 class="message valid-message session-time-message"> <!-- valid-message class or invalid-message class  -->
@@ -207,8 +207,8 @@
                         </div>
 
                         <!-- ! ------------------------- add new session box ------------------------- ! -->
-                        <div class="add-new-sesssion-box w-100 mt-30">
-                            <button type="submit" class="add-new-session-btn mt-3">
+                        <div class="add-new-sesssion-box w-100 mt-30" >
+                            <button type="submit" class="add-new-session-btn mt-3"id="add-new-sesstion">
                                 <svg id="edit" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path id="Vector" d="M8.236,0H6.406C1.83,0,0,1.83,0,6.406V11.9C0,16.472,1.83,18.3,6.406,18.3H11.9c4.576,0,6.406-1.83,6.406-6.406v-1.83" transform="translate(1.849 1.849)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-2" data-name="Vector" d="M8.31,1.175,1.027,8.459a2.507,2.507,0,0,0-.61,1.22l-.4,2.782a1.317,1.317,0,0,0,1.571,1.571l2.782-.4a2.589,2.589,0,0,0,1.22-.61l7.284-7.284c1.257-1.257,1.849-2.717,0-4.566S9.568-.082,8.31,1.175Z" transform="translate(6.332 1.616)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-3" data-name="Vector" d="M0,0A6.6,6.6,0,0,0,4.566,4.566" transform="translate(13.638 3.796)" fill="none" stroke="var(--white)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><path id="Vector-4" data-name="Vector" d="M0,0H22V22H0Z" fill="none" opacity="0"/></svg>
                                 add new session
                             </button>
@@ -244,6 +244,6 @@
             </section>
         </main>
     </div>
-
+<script src="./content/js/sessions.js"></script>
 </body>
 </html>
